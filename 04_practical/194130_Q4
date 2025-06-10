@@ -1,0 +1,7 @@
+def tail_recursion(n, acc=0):
+    if n == 0:
+        return acc
+    else:
+        return tail_recursion(n - 1, acc + n)
+    
+print(tail_recursion(10))
